@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main(){
+	int tam = 50, i;
+	char cadena[tam];
+	char *p=cadena;
+	cout << "Introduce cadena: ";
+	cin.getline (cadena, tam);
+	
+	for(i=0; i<tam; i++){
+		if(*p==' ' && *p!='\0'){
+			cout << "Te encontre pajarillo en la posicion" << i <<  endl;
+		}
+		p++;	
+	}
+
+}
